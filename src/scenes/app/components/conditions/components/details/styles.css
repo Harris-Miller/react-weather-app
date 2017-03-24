@@ -1,0 +1,23 @@
+.high {
+  color: #D5202A; /* TODO: variable this */
+}
+
+.low {
+  color: #0053AE; /* TODO: variable this */
+}
+
+.data-list {
+  margin: 0;
+
+  & > dt {
+    float: left;
+    clear: left;
+    width: 50%;
+  }
+
+  & > dd {
+    float: right;
+    margin: 0;
+    width: 50%;
+  }
+}
