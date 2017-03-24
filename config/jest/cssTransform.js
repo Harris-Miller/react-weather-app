@@ -15,5 +15,5 @@ module.exports = {
   },
   getCacheKey() {
     return `${objectHash(cssObject)}`;
-  },
+  }
 };

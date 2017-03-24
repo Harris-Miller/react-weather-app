@@ -1,0 +1,9 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": "eslint-config-harris/react-recommended",
+  "rules": {
+    "react/prop-types": 0
+  }
+}
