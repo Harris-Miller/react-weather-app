@@ -1,21 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import promiseMIddleware from 'redux-promise';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import AppBar from './components/app-bar';
-import Demo from './scenes/demo';
+import reducers from './reducers';
+import App from './scenes/app';
 import SubRoute from './components/sub-route';
 
 import './styles/global.css';
 
+const store = createStore(
+  reducers,
+  applyMiddleware(
+    promiseMIddleware
+  )
+);
+
 ReactDOM.render(
-  <Router>
-    <div>
-      <Route path="/" component={AppBar} />
-      <Demo>
+  <Provider store={store}>
+    <Router>
+      <App>
         <Route path="/" component={SubRoute} />
         <Route path="/omg" component={SubRoute} />
-      </Demo>
-    </div>
-  </Router>,
+      </App>
+    </Router>
+  </Provider>,
   document.getElementById('root')
 );

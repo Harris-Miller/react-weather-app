@@ -1,0 +1,11 @@
+.larger {
+  font-size: 15px; /* TODO: adjust this to use react-toolbox variables */
+}
+
+.high {
+  color: #D5202A; /* TODO: variable this */
+}
+
+.low {
+  color: #0053AE; /* TODO: variable this */
+}

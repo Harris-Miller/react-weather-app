@@ -1,6 +1,5 @@
 import React from 'react';
 import { AppBar as ToolboxAppBar } from 'react-toolbox';
-// import Link from './link';
 import theme from './theme.css';
 
 const AppBar = () => (
@@ -11,9 +10,6 @@ const AppBar = () => (
     rightIcon="person"
   >
     {'TODO'}
-    {/*<Link to="/">Dashboard</Link>
-    <Link to="/vod">VOD</Link>
-    <Link to="/linear">LINEAR</Link>*/}
   </ToolboxAppBar>
 );
 
