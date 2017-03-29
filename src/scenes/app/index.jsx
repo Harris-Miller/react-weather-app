@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-grid-system';
 // import { Route } from 'react-router-dom';
 import AppBar from './components/app-bar';
 import Conditions from './components/conditions';
+import Hourly from './components/hourly';
 import { fetchCurrentConditions } from './actions';
 
 export class App extends Component {
@@ -21,13 +22,12 @@ export class App extends Component {
           <Col>
             <AppBar />
           </Col>
-        </Row>
-        <Row>
           <Col>
             <Conditions />
           </Col>
-        </Row>
-        <Row>
+          <Col>
+            <Hourly />
+          </Col>
           <Col>
             {children}
           </Col>

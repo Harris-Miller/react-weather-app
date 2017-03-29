@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-grid-system';
-import styles from './styles.css';
+import styles from 'styles/common.css';
 
 const Overview = ({ conditions, today }) => (
   <div>

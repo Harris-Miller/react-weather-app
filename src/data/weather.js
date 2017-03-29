@@ -27,4 +27,8 @@ export default class Weather {
   get forecast() {
     return this.json && this.json.forecast;
   }
+
+  get hourly() {
+    return this.json && this.json.hourly_forecast;
+  }
 }
